@@ -136,14 +136,14 @@ function myFunction(){
     var x = 0;
 	for (var i = 0, length = radios.length; i < length; i++) {
 		if (radios[i].checked)
-        {x = x + radios[i].value;}
-        break;
+        {x = x + radios[i].value;
+	 break;}
 	}
     var radios = document.getElementsByName('question2');
 	for (var i = 0, length = radios.length; i < length; i++) {
 		if (radios[i].checked)
-        {x = x + radios[i].value;}
-        break;
+        {x = x + radios[i].value;
+	break;}
 	}
     switch (x){
   		case '011': txt = "恭喜你，你是漂亮猪！";
@@ -154,15 +154,15 @@ function myFunction(){
         break;
         case '021': txt = "恭喜你，你是胖胖猪！";
    	 	break;
-  		case '022': txt = "恭喜你，你是臭臭猪！";
+  		case '022': txt = "很不幸，你不是猪。";
     	break;
         case '023': txt = "恭喜你，你是臭臭猪！";
     	break;
-        case '031': txt = "恭喜你，你是臭臭猪！";
+        case '031': txt = "恭喜你，你是坏坏猪！";
     	break;
-        case '032': txt = "恭喜你，你是臭臭猪！";
+        case '032': txt = "恭喜你，你是聪明猪！";
     	break;
-        case '033': txt = "恭喜你，你是臭臭猪！";
+        case '033': txt = "恭喜你，你是瘦瘦猪！";
     	break;
         default: txt = "很不幸，你不是猪。";
         break;
